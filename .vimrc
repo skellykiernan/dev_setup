@@ -10,12 +10,13 @@
 set nocp
 set ls=2
 set tabstop=4
+set shiftwidth=4
 set expandtab
 set ruler
 set number
 set ignorecase
 set modeline
-set autoindent
+set smartindent
 set nobackup
 set wrap
 set hidden
