@@ -10,6 +10,7 @@
 set nocp
 set ls=2
 set tabstop=4
+set expandtab
 set ruler
 set number
 set ignorecase
@@ -24,7 +25,7 @@ set backspace=indent,eol,start
 syntax on
 
 "Yes filetype matter
-filetype plugin on
+filetype plugin indent on
 
 "Set a nice Omnifunc - <CTRL>X <CTRL>O
 set ofu=syntaxcomplete#Complete
@@ -92,5 +93,4 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 nnoremap <F3> :TlistToggle<CR>
 let Tlist_Use_Right_Window = 1
 let Tlist_WinWidth = 50
-
 
