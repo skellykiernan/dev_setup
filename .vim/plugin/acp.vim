@@ -149,10 +149,10 @@ call s:defineOption('g:acp_behavior', {})
 "-----------------------------------------------------------------------------
 call extend(g:acp_behavior, s:makeDefaultBehavior(), 'keep')
 "-----------------------------------------------------------------------------
-command! -bar -narg=0 AcpEnable  call acp#enable()
-command! -bar -narg=0 AcpDisable call acp#disable()
-command! -bar -narg=0 AcpLock    call acp#lock()
-command! -bar -narg=0 AcpUnlock  call acp#unlock()
+"command! -bar -narg=0 AcpEnable  call acp#enable()
+"command! -bar -narg=0 AcpDisable call acp#disable()
+"command! -bar -narg=0 AcpLock    call acp#lock()
+"command! -bar -narg=0 AcpUnlock  call acp#unlock()
 "-----------------------------------------------------------------------------
 " legacy commands
 command! -bar -narg=0 AutoComplPopEnable  AcpEnable
@@ -160,9 +160,9 @@ command! -bar -narg=0 AutoComplPopDisable AcpDisable
 command! -bar -narg=0 AutoComplPopLock    AcpLock
 command! -bar -narg=0 AutoComplPopUnlock  AcpUnlock
 "-----------------------------------------------------------------------------
-if g:acp_enableAtStartup
-  AcpEnable
-endif
+"if g:acp_enableAtStartup
+"  AcpEnable
+"endif
 "-----------------------------------------------------------------------------
 
 " }}}1
