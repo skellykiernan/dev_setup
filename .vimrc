@@ -84,7 +84,7 @@ map <F8> :cprevious<Return>
 map <F9> :cnext<Return>
 
 "This is a nice buffer switcher
-:nnoremap <F5> :buffers<CR>:buffer<Space>
+:nnoremap <F5> :buffers<CR>:b<Space>
 
 
 "You can change colors easily in vim.
