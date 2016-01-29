@@ -3,7 +3,5 @@
 # Except this file and vim stuff
 !.gitignore
 !.vimrc
-!.vim/
-!.vim/*
-!.vim/*/*
-!.vim/*/*/*
+!.tmux.conf
+!.tmux/*
