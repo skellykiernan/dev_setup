@@ -35,11 +35,13 @@ Plugin 'bling/vim-airline'
 " Commenter
 Plugin 'scrooloose/nerdcommenter'
 " color schemes
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'altercation/vim-colors-solarized'
 " diff a directory
 Plugin 'DirDiff.vim'
 " undo tree
 Plugin 'mbbill/undotree'
+" for semaless pane naviagtion with tmux 
+Plugin 'christoomey/vim-tmux-navigator'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
