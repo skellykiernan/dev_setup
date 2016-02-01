@@ -91,6 +91,8 @@ map <F9> :cnext<Return>
 
 "You can change colors easily in vim.
 "Just type <ESC>:colorscheme and then TAB complete through the options
+" adjust vim for 256 color scheme
+let &t_Co=256
 colorscheme desert
 set background=dark
 
