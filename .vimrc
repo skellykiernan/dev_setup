@@ -13,12 +13,14 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/taglist.vim'
+" cscope 
+Plugin 'brookhong/cscope.vim'
 " For snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
-" Ag grep like
+" Ag grep like but faster
 Plugin 'rking/ag.vim'
 " Mako Syntax
 Plugin 'sophacles/vim-bundle-mako'
@@ -100,3 +102,7 @@ set background=dark
 nnoremap <F3> :TlistToggle<CR>
 let Tlist_Use_Right_Window = 1
 let Tlist_WinWidth = 50
+
+" CSCOPE mappings
+nnoremap <leader>fa :call CscopeFindInteractive(expand('<cword>'))<CR>
+nnoremap <leader>l :call ToggleLocationList()<CR>
