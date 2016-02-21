@@ -8,12 +8,12 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plugin 'gmarik/Vundle.vim'   
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/taglist.vim'
-" cscope 
+" cscope
 Plugin 'brookhong/cscope.vim'
 " For snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -42,7 +42,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'DirDiff.vim'
 " undo tree
 Plugin 'mbbill/undotree'
-" for semaless pane naviagtion with tmux 
+" for semaless pane naviagtion with tmux
 Plugin 'christoomey/vim-tmux-navigator'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -82,6 +82,9 @@ set backspace=indent,eol,start
 "Syntax highlighting
 syntax on
 
+" Change the leader
+let mapleader=","
+
 "Mapped some FUNCTION keys to be more useful..
 map <F7> :make<Return>:copen<Return>
 map <F8> :cprevious<Return>
@@ -102,6 +105,9 @@ set background=dark
 nnoremap <F3> :TlistToggle<CR>
 let Tlist_Use_Right_Window = 1
 let Tlist_WinWidth = 50
+
+" Removes trailing whitespace
+nnoremap <leader>tw :%s/\s\+$//e<CR>
 
 " CSCOPE mappings
 nnoremap <leader>fa :call CscopeFindInteractive(expand('<cword>'))<CR>
