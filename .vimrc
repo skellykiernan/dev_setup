@@ -28,7 +28,8 @@ Plugin 'sophacles/vim-bundle-mako'
 Plugin 'kien/ctrlp.vim'
 " Tabularize and Markdown Support
 Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+Plugin 'vim-pandoc/vim-pandoc'
+" Plugin 'plasticboy/vim-markdown'
 " Plugin 'tpope/vim-markdown'
 " Indent Guides
 Plugin 'nathanaelkane/vim-indent-guides'
