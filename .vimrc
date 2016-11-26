@@ -20,6 +20,7 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
+Plugin 'tpope/vim-abolish'
 " Ag grep like but faster
 Plugin 'rking/ag.vim'
 " Mako Syntax
@@ -100,7 +101,12 @@ map <F9> :cnext<Return>
 " adjust vim for 256 color scheme
 let &t_Co=256
 colorscheme desert
-set background=dark
+
+" get rid of the arrows to get good habits
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
 
 "TAGLIST setup
 nnoremap <F3> :TlistToggle<CR>
