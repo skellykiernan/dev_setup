@@ -1,8 +1,0 @@
-# Ignore everything 
-*
-# Except this file and vim stuff
-!.gitignore
-!.vimrc
-!.tmux.conf
-!.tmux/*
-!update.sh
