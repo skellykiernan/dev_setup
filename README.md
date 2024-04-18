@@ -17,4 +17,34 @@ Late have started playing with Ubuntu 20.04 using WSL2, not bad (even for Micros
   - Do not like the command line interface, access linux via a windows command window does not feel natural [MobaXterm](https://mobaxterm.mobatek.net/) gives a more natural experience
 
 
+```mermaid
+---
+title: test flow
+---
+flowchart TD
+A <--> B & C
+B --> D
+C --> D
+B --> E
+E --> F & H
+E --> E
+```
+
+```mermaid
+sequenceDiagram
+participant En1
+participant En2
+participant En3
+participant En4
+participant En5
+participant En6
+participant En7
+
+En1 ->> En2: Test
+
+En3 ->> En1: look here
+
+```
+
+
 
